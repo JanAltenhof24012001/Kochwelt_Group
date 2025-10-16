@@ -21,6 +21,7 @@ h1 {
 }
 
 .btn {
+    font-family: "Raleway", sans-serif;
     text-decoration: none;
     color: black;
     margin-left: 20px;
@@ -64,6 +65,7 @@ h1 {
 
 .ditail-box {
     display: flex;
+    font-family: "Raleway", sans-serif;
 }
 
 .difficulty-box {
@@ -95,6 +97,7 @@ h1 {
 }
 
 .Ingredients {
+    font-family: "Raleway", sans-serif;;
     font-size: 21px;
     font-weight: bold;
 }
@@ -114,7 +117,7 @@ h1 {
 }
 
 .table {
-    font-family: arial, sans-serif;
+    font-family: "Raleway", sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
@@ -132,15 +135,21 @@ tr:nth-child(even) {
 }
 
 .preparation {
+    font-family:"Raleway", sans-serif;
     font-size: 24px;
     font-weight: bold;
     margin-top: 30px;
 }
 
 .creator {
+    font-family: "Raleway", sans-serif;;
     margin-top: 30px;
     font-size: 24px;
     font-weight: bold;
+}
+
+.explanation{
+    font-family: "Raleway", sans-serif;
 }
 
 .profile-png {
