@@ -1,0 +1,160 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    width: 350px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 24px;
+
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        color: #008000;
+    }
+}
+
+.btn-impressum {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 24px;
+
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        color: #008000;
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ditail-box {
+    display: flex;
+}
+
+.difficulty-box {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #EFEFEF;
+}
+
+.time-clock {
+    width: 24px;
+
+}
+
+.brain-solid {
+    width: 24px;
+}
+
+.calendar {
+    width: 24px;
+}
+
+#Ingredients-calculator {
+    margin-top: 30px;
+    padding-top: 3px;
+}
+
+.Ingredients {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.input {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.btn-Portion {
+    background-color: #008000;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    gap: 0px;
+    padding: 5px 20px 5px 20px;
+}
+
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #EFEFEF;
+}
+
+.preparation {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.creator {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-png {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+#profile {
+    font-size: 27px;
+    width: 100px;
+    border-radius: 100px;
+}

@@ -1,0 +1,74 @@
+html {
+    font-family: Raleway, sans-serif;
+    background-color: #f4f4f4;
+    font-size: 24px;
+    scroll-behavior: smooth;
+}
+
+main {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 160px;
+}
+
+h1 {
+    color: white;
+    font-size: 96px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: bold;
+
+}
+
+h3 {
+    font-family: Economica, sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+    
+
+}
+
+.nav_button {
+    color: black;
+    cursor: default;
+    text-decoration: none;
+}
+.scale_graphic {
+    width: 24px;
+    height: auto;
+}
+.Expense {
+    display: flex;
+    gap: 20px;
+}
+.impingement {
+    display: flex;
+    gap: 10px;
+}
+
+.food_print {
+    width: 800px;
+    height: auto;
+}

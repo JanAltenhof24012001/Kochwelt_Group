@@ -1,0 +1,81 @@
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-links {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.panna-cotta {
+   background: url(./img/Panna-Cotta.jpg);
+   width: 100%;
+   height: 350px;
+   background-size: cover;
+   background-position: center;
+}
+
+.requirements {
+    display: flex;
+    background-color: gray;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.requirements-div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.requirements-pic {
+    height: 20px;
+}
+
+.number-of-persons {
+    display: flex;
+}
+
+.persons-input {
+    margin-left: 20px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+
+}
+
+.li {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-picture {
+    border-radius: 100%;
+    width: 10%;
+    
+}
