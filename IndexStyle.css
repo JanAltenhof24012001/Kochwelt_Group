@@ -1,8 +1,8 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,6 +37,54 @@ h2 {
     margin: 0px 60px;
 }
 
+@media (max-width: 1020px) {
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 112px;
+            height: 112px;
+        }
+    }
+
+    .media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:320px) {
+
+    .content {
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    .media {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        margin-left: 40px;
+    }
+}
 
 
 
@@ -123,14 +171,14 @@ h2 {
         gap: 48px;
     }
 
-.new_rezipes img {
+    .new_rezipes img {
         width: 112px;
         height: 112px;
     }
 
-.preselection_panna_cotta,
-.preselection_roulade,
-.preselection_soljanka {
+    .preselection_panna_cotta,
+    .preselection_roulade,
+    .preselection_soljanka {
         gap: 8px;
     }
 }
@@ -152,9 +200,9 @@ h2 {
         height: 112px;
     }
 
-.preselection_panna_cotta,
-.preselection_roulade,
-.preselection_soljanka {
+    .preselection_panna_cotta,
+    .preselection_roulade,
+    .preselection_soljanka {
         gap: 8px;
     }
 }
