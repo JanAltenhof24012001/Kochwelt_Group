@@ -1,0 +1,30 @@
+html{
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    margin: 30px;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.wok-jpg {
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+    margin: 0px 60px ;
+}
