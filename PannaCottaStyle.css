@@ -40,6 +40,10 @@ a:hover {
     display: none;
 }
 
+.hidden-header-links {
+    display: none;
+}
+
 main {
     padding-left: 100px;
     padding-right: 100px;
@@ -150,6 +154,18 @@ footer {
         background-color: gray;
         
 
+    }
+    
+    .hidden-header-links {
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    }
+
+    .hide {
+        display: none;
     }
 }
 
