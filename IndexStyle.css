@@ -11,6 +11,84 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+
+
+
+
+header {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-links {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+}
+
+.section1 {
+    display: flex;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.manti-pic {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.recipe-of-the-day {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+button {
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(0, 161, 0);
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
 h2 {
     display: flex;
     justify-content: center;
@@ -203,4 +281,15 @@ h2 {
     .preselection_soljanka {
         gap: 8px;
     }
+}
+
+
+
+
+
+footer {
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(0, 0, 0, 0.904);
+    margin: 0;
 }
