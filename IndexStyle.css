@@ -48,17 +48,20 @@ a:hover {
 
 .section1 {
     display: flex;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 100px;
 }
 
 .manti-pic {
+    background: url(./img/Manti.jpg);
     width: 50%;
     border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .recipe-of-the-day {
+    width: 50%;
     padding-left: 50px;
     display: flex;
     flex-direction: column;
