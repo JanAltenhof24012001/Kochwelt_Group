@@ -13,6 +13,7 @@ header {
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 .header-links {
@@ -33,6 +34,10 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
+}
+
+.burger-menu {
+    display: none;
 }
 
 main {
@@ -128,6 +133,24 @@ footer {
     padding-right: 100px;
     background-color: rgba(0, 0, 0, 0.904);
     margin: 0;
+}
+
+@media(max-width:1170px) {
+    header {
+        align-items: center;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        height: 40px;
+        background-color: gray;
+        
+
+    }
 }
 
 @media(max-width:800px) {
