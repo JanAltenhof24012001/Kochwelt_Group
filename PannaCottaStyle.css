@@ -175,6 +175,12 @@ footer {
     }
 }
 
+@media(max-width:680px) {
+    .footer-header-logo {
+        width: 200px;
+    }
+}
+
 @media(max-width:640px) {
     input {
         width: 100px;
@@ -201,7 +207,19 @@ footer {
 
 @media(max-width:500px) {
     main {
-        padding: 50px;
+        padding: 25px;
+    }
+    header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .burger-menu {
+        height: 20px;
+    }
+
+    .hidden-header-links {
+        padding-right: 25px;
     }
     
 }
