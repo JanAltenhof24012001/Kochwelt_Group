@@ -4,6 +4,7 @@ html {
     font-size: 24px;
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     border: 0;
@@ -74,22 +75,28 @@ button {
     cursor: default;
     text-decoration: none;
 }
+
 .scale_graphic {
     width: 24px;
     height: auto;
 }
+
 .Expense {
     display: flex;
     gap: 20px;
 }
+
 .impingement {
     display: flex;
     gap: 10px;
 }
 
 .food_print {
-    width: 800px;
-    height: auto;
+    width: 100%;
+    height: 350px;
+    background-size: auto;
+    background-position: center;
+    border-radius: 20px;
 }
 
 .potion_input_area {
@@ -112,5 +119,5 @@ button {
 
 footer {
     padding: 100px 160px;
-    background-color:rgb(100, 77, 77);
+    background-color: rgb(100, 77, 77);
 }
