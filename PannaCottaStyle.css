@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: "Raleway", sans-serif;
+    font-size: 25px;
 }
 
 header {
@@ -68,6 +69,7 @@ main {
 
 .number-of-persons {
     display: flex;
+    align-items: center;
 }
 
 .persons-input {
@@ -75,6 +77,8 @@ main {
     border-color: rgba(0, 0, 0, 0.1);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    height: 40px;
+
 }
 
 button {
@@ -82,6 +86,7 @@ button {
     background-color: green;
     color: white;
     font-weight: bold;
+    height: 45px;
     
 }
 
@@ -122,4 +127,48 @@ footer {
     padding-right: 100px;
     background-color: rgba(0, 0, 0, 0.904);
     margin: 0;
+}
+
+@media(max-width:800px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:640px) {
+    input {
+        width: 100px;
+    }
+    
+    button {
+        width: 100px
+    }
+
+    .requirements-div {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .requirements {
+        align-items: center;
+    }
+
+    .requirements-pic {
+        height: 10px;
+    }
+
+}
+
+@media(max-width:500px) {
+    main {
+        padding: 50px;
+    }
+    
+}
+
+@media(max-width: 450px) {
+    .requirements {
+        font-size: 9px;
+        gap: 0;
+    }
 }
