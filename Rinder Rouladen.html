@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
+    <link rel="stylesheet" href="RinderRouladenscript.js">
     <link rel="stylesheet" href="RinderRouladenStyle.css">
     <link rel="icon" href="./img/logo_small.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,26 +15,30 @@
 </head>
 
 <body>
-
-
-
     <header>
         <section class="logo">
             <div>
                 <img class="" src="./img/logo.png" alt="">
             </div>
-            <div class="btn">
+            
+            <img class="burger-menu" onclick="hidden_menu()" src="./img/burger menu.png" alt="menu">
+            
+            <nav class="btn hide" id="hide-menu"></nav>
+            
+            <nav class="btn hide" id="hide-menu">
                 <a class="btn" href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/index.html">Start</a>
-                <a class="btn" href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/Manti.html">Rezept des Tages</a>
+                <a class="btn" href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/Manti.html">Rezept des
+                    Tages</a>
                 <a class="btn" href="">Kontank</a>
-                <a onclick="" class="btn-impressum" href="/impressum.html">Impressum</a>
-            </div>
+                <a class="btn" href="">Impressum</a>
+            </nav>
         </section>
+
     </header>
 
-    <main>
+    <main class="mainContainer">
         <h1>Rinder Rouladen</h1>
-        <img class="header-img" src="./img/roulades-3061243_1280.jpg" alt=""> 
+        <img class="header-img" src="./img/roulades-3061243_1280.jpg" alt="">
 
         <div class="ditail-box">
             <div class="difficulty-box">
@@ -101,6 +106,21 @@
     </table>
 
     <section class="preparation">Zubereitung</section>
+    <div class="ditail-box-footer">
+        <div class="ditail-box">
+            <div class="difficulty-box">
+                <img class="time-clock" src="./img/icons/clock-regular.svg" alt="">
+                15 Min
+            </div>
+
+            <div class="ditail-box">
+                <div class="difficulty-box">
+                    <img class="time-clock" src="./img/icons/clock-regular.svg" alt="">
+                    Gesamtzeit 15 Min
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="explanation">
         <span>1.
             Die Rinderrouladen mit Küchenkrepp trockentupfen. Zwiebeln in Halbmonde, Gurken in Längsstreifen schneiden.
