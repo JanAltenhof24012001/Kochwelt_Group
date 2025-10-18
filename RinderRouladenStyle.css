@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-.burger-menu{
+.burger-menu {
     display: none;
 }
 
@@ -166,6 +166,15 @@ tr:nth-child(even) {
     font-size: 27px;
     width: 100px;
     border-radius: 100px;
+}
+
+.footer-header-logo{
+    margin-left: 30px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.904);
+    margin: 0;
 }
 
 @media(max-width:1170px) {
