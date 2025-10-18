@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <script src="Contactscript.js"></script>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo">
+
+        <nav class="header-links">
+            <a href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/index.html">Start</a>
+            <a href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/Manti.html">Rezept des Tages</a>
+            <a href="">Kontakt</a>
+            <a href="">Impressum</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <form class="Contact-box" onsubmit="sendMail (event)">
+            <h2>Kontaktiere uns</h2>
+            <label for="fname">Dein Name:</label><br>
+            <input class="Input" type="text" id="fname" name="fname" value=""><br>
+
+            <label for="lname">Deine Email:</label><br>
+            <input class="Input" type="text" id="lname" name="Email" value=""><br><br>
+
+            <label for="text">Deine Nachricht</label>
+            <input class="Input-Nachricht" type="text" id="text" name="text" value=""><br><br>
+
+            <input class="Abschicken-btn" type="submit" value="Abschicken">
+        </form>
+    </main>
+
+    <footer>
+        <img class="footer-header-logo" src="./img/logo.png" alt="logo">
+    </footer>
+</body>
+
+</html>
