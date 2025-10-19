@@ -1,12 +1,15 @@
 html {
     scroll-behavior: smooth;
-    font-family: "Raleway", sans-serif;
-
 }
 
 body {
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway\static\Raleway-Regular.ttf);
 }
 
 .burger-menu {
@@ -168,7 +171,7 @@ tr:nth-child(even) {
     border-radius: 100px;
 }
 
-.footer-header-logo{
+.footer-header-logo {
     margin-left: 30px;
 }
 
