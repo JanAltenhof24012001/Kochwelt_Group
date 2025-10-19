@@ -8,6 +8,7 @@
 
     <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
     <link rel="stylesheet" href="./SoljankaStylee.css">
+    <script src="PannaCottaScript.js" defer></script>
 
 </head>
 
@@ -15,10 +16,22 @@
     <header>
         <img src="img/logo.png" alt="Kochwelt Logo">
         <nav class="navigation">
-            <a class="nav_button" href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/index.html">Start</a>
-            <a class="nav_button" href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/Manti.html">Rezept des Tages</a>
-            <a class="nav_button" href="#contact">Kontakt</a>
-            <a class="nav_button" href="#impressum">Impressum</a>
+            <a class="nav_button"
+                href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/index.html">Start</a>
+            <a class="nav_button" href="Manti.html">Rezept des Tages</a>
+            <a class="nav_button" href="Contact.html">Kontakt</a>
+            <a class="nav_button" href="Impressum.html">Impressum</a>
+        </nav>
+
+
+        <img class="burger-menu" onclick="hidden_menu()" src="./img/burger menu.png" alt="menu">
+
+        <nav class="navigation">
+            <a class="nav_button"
+                href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/index.html">Start</a>
+            <a class="nav_button" href="Manti.html">Rezept des Tages</a>
+            <a class="nav_button" href="Contact.html">Kontakt</a>
+            <a class="nav_button" href="Impressum.html">Impressum</a>
         </nav>
     </header>
     <main>
@@ -28,15 +41,15 @@
             <div class="Expense">
                 <div class="impingement">
                     <img class="scale_graphic" src="img/icons/clock-regular.svg" alt="clock">
-                    <p class="work_time">Zeitaufwand</p>
+                    <p class="work_time">35 Minuten</p>
                 </div>
                 <div class="impingement">
                     <img class="scale_graphic" src="img/icons/brain-solid.svg" alt="brain">
-                    <p class="difficulty">Schwierigkeit</p>
+                    <p class="difficulty">Mittel</p>
                 </div>
                 <div class="impingement">
                     <img class="scale_graphic" src="img/icons/calendar-alt-regular.svg" alt="calendar">
-                    <p class="creation_day">Erstellungstag</p>
+                    <p class="creation_day">14.Okt.2025</p>
                 </div>
             </div>
         </section>
@@ -50,20 +63,20 @@
                     <input class="multiplaktor_potion" type="number" max="20" min="1" value="1" required>
                     <button onclick="set_multiplied()" class="multiplaktor_button">Portionen</button>
                 </div>
-                <ul>
-                    <li>500g Rindfleisch</li>
-                    <li>500g Schweinefleisch</li>
-                    <li>5 EL Tomatenmark</li>
-                    <li>3 große Zwiebel</li>
-                    <li>2 Glas Letscho (ca. 720g)</li>
-                    <li>1 Glas Gewürzgurken (ca. 700g)</li>
-                    <li>700ml passierte Tomaten</li>
-                    <li>1L Wasser</li>
-                    <li>1 TL Paprikapulver (edelsüß)</li>
-                    <li>Salz und Pfeffer nach Geschmack</li>
-                    <li>Öl zum Anbraten</li>
-                    <li>1 Becher Schmand oder Saure Sahne (optional)</li>
-                    <li>1 Zitrone (optional)</li>
+                <ul class="list_of_ingredients">
+                    <li class="ingredients">500g Rindfleisch</li>
+                    <li class="ingredients2">500g Schweinefleisch</li>
+                    <li class="ingredients">5 EL Tomatenmark</li>
+                    <li class="ingredients2">3 große Zwiebel</li>
+                    <li class="ingredients">2 Glas Letscho (ca. 720g)</li>
+                    <li class="ingredients2">1 Glas Gewürzgurken (ca. 700g)</li>
+                    <li class="ingredients">700ml passierte Tomaten</li>
+                    <li class="ingredients2">1L Wasser</li>
+                    <li class="ingredients">1 TL Paprikapulver (edelsüß)</li>
+                    <li class="ingredients2">1 Becher Schmand oder Saure Sahne (optional)</li>
+                    <li class="ingredients">1 Zitrone (optional)</li>
+                    <li class="ingredients2">Salz und Pfeffer nach Geschmack</li>
+                    <li class="ingredients">Öl zum Anbraten</li>
                 </ul>
             </div>
         </section>
@@ -74,15 +87,11 @@
             <div class="Expense">
                 <div class="impingement">
                     <img class="scale_graphic" src="img/icons/clock-regular.svg" alt="clock">
-                    <p class="work_time">Zeitaufwand Schnippeln</p>
+                    <p class="work_time">Zubereitung: ca 10 min </p>
                 </div>
                 <div class="impingement">
                     <img class="scale_graphic" src="img/icons/clock-regular.svg" alt="clock">
-                    <p class="work_time">Zeitaufwand Backen</p>
-                </div>
-                <div class="impingement">
-                    <img class="scale_graphic" src="img/icons/clock-regular.svg" alt="clock">
-                    <p class="work_time">Zeitaufwand Gesamt</p>
+                    <p class="work_time">Gesamt: ca 35 min</p>
                 </div>
             </div>
             <p>
