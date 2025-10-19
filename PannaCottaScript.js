@@ -17,3 +17,8 @@ function ammount() {
     document.getElementById('zucker').innerHTML =  (20 * numberofpersons.value) + 'g Zucker'
 
 }
+
+
+function set_multiplied() {
+    document.getElementById('multiplied-persons').innerHTML = numberofpersons.value;
+}
