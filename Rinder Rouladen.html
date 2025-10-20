@@ -54,52 +54,28 @@
     </main>
 
     <section id="Ingredients-calculator">
-        <span class="Ingredients">Zutaten für</span>
-        <input class="input" type="number" max="20" min="1" value="4" required>
-        <buttonc class="btn-Portion">Portionen</button>
+        <div class="number-of-persons">
+            <span class="Ingredients">Zutaten für</span>
+            <input id="number-of-persons" class="input" type="number">
+            <button onclick="ammount()" class="btn-Portion">Portionen</button>
+        </div>
     </section>
 
-    <table class="table" id="rezept-des-tages">
-        <tr>
-            <td id="Rinderrouladen">2 Rinderrouladen</td>
-        </tr>
-        <tr>
-            <td id="zwiebel">1.25 Zwiebel(n)</td>
-        </tr>
-        <tr>
-            <td id="Gwürzgurke">1 Gwürzgurke(n)</td>
-        </tr>
-        <tr>
-            <td id="Scheiben Frühstücksspeck">3 Scheibe(n) Frückstückspeck</td>
-        </tr>
-        <tr>
-            <td id="Butterschmalz">0.5 EL Butterschmalz</td>
-        </tr>
-        <tr>
-            <td id="Knollensllerie">0.25 Stück(e) Knollensllerie</td>
-        </tr>
-        <tr>
-            <td id="Möhren">0.25 Möhre(n)</td>
-        </tr>
-        <tr>
-            <td id="Stangen">0.13 Stange(n) Lauch</td>
-        </tr>
-        <tr>
-            <td id="Rotwein">0.13 ml Flaschen Rotwein</td>
-        </tr>
-        <tr>
-            <td>Salz und Pfeffer </td>
-        </tr>
-        <tr>
-            <td id="Rinderfond">0.13 Rinderfond</td>
-        </tr>
-        <tr>
-            <td>TL Speisestärke</td>
-        </tr>
-        <tr>
-            <td>0.25Gurkenflüssigkeit</td>
-        </tr>
-    </table>
+    <ul>
+        <li id="Rinderrouladen" class="li">2 Rinderrouladen</li>
+        <li id="zwiebel">1.25 Zwiebel(n)</li>
+        <li id="Gwürzgurke" class="li">1 Gwürzgurke(n)</li>
+        <li id="Scheiben Frühstücksspeck">3 Scheibe(n) Frückstückspeck</li>
+        <li id="Butterschmalz" class="li">0.5 EL Butterschmalz</li>
+        <li id="Knollensllerie">0.25 Stück(e) Knollensllerie</li>
+        <li id="Möhren" class="li">0.25 Möhre(n)</li>
+        <li id="Stangen">0.13 Stange(n) Lauch</li>
+        <li id="Rotwein" class="li">0.13 ml Flaschen Rotwein</li>
+        <li>Salz und Pfeffer </li>
+        <li id="Rinderfond" class="li">0.13 Rinderfond</li>
+        <li>TL Speisestärke</li>
+        <li id="Gurkenflüssigkeit" class="li">0.25 Gurkenflüssigkeit</li>
+    </ul>
 
     <section class="preparation">Zubereitung</section>
     <div class="ditail-box-footer">
