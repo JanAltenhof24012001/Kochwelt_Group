@@ -23,7 +23,7 @@ main {
     padding: 0;
     display: flex;
     flex-direction: column;
-    padding: 20px 100px;
+    padding: 20px 160px;
     gap: 20px;
     max-width: 1920px;
 
@@ -37,7 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     max-width: 1920px;
-    padding: 0px 100px;
+    padding: 0px 160px;
 }
 
 
@@ -105,6 +105,10 @@ button:hover {
     color: rgb(0, 161, 19);
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
+}
+
+.hidden_navigation {
+    display: none;
 }
 
 .potion_input_area p {
@@ -202,7 +206,7 @@ button:hover {
 
 footer {
     background-color: rgba(64, 59, 59, 0.76);
-    padding: 30px 100px;
+    padding: 30px 160px;
     max-width: 1920px;
 }
 
@@ -211,7 +215,7 @@ footer img {
     height: 72px;
 }
 
-@media(max-width:1170px) {
+@media(max-width:1280px) {
     html {
         font-size: 20px;
     }
@@ -232,17 +236,29 @@ footer img {
         align-items: center;
     }
 
-    .header,
-    .main,
-    .footer {
+    header,
+    main,
+    footer {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .hidden_navigation {
+        padding-right: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: end;
     }
 
     .burger-menu {
         display: block;
         height: 40px;
         background-color: gray;
+    }
+
+    .hide {
+        display: none;
     }
 
     .navigation {
@@ -257,7 +273,7 @@ footer img {
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
     html {
         font-size: 16px;
     }
@@ -274,11 +290,19 @@ footer img {
         font-size: 32px;
     }
 
-    .header,
-    .main,
-    .footer {
+    .Kochwelt_logo {
+        width: 200px;
+    }
+
+    header,
+    main,
+    footer {
         padding-left: 24px;
         padding-right: 24px;
+    }
+
+    .hidden_navigation {
+        padding-right: 16px;
     }
 
 }
