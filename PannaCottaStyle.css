@@ -10,15 +10,15 @@ body {
 }
 
 header {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 160px;
+    padding-right: 160px;
     display: flex;
     justify-content: space-between;
     border-bottom-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-    
+    height: 112px;
 }
 
 .header-links {
@@ -50,8 +50,8 @@ a:hover {
 }
 
 main {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 160px;
+    padding-right: 160px;
 }
 
 .panna-cotta {
@@ -120,6 +120,7 @@ ul {
 li {
     padding-left: 30px;
 }
+
 .li {
     background-color: rgb(239, 239, 239);
     border-radius: 10px;
@@ -142,15 +143,33 @@ li {
 }
 
 footer {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 160px;
+    padding-right: 160px;
     background-color: rgba(64, 59, 59, 0.76);
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
-@media(max-width:1170px) {
+@media(max-width:1280px) {
+    body {
+        font-size: 20px;
+    }
+
     header {
+        padding-left: 24px;
+        padding-right: 24px;
         align-items: center;
+    }
+
+    main {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .header-links {
@@ -161,12 +180,10 @@ footer {
         display: block;
         height: 40px;
         background-color: gray;
-        
-
     }
     
     .hidden-header-links {
-    padding-right: 100px;
+    padding-right: 24px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -176,66 +193,85 @@ footer {
     .hide {
         display: none;
     }
-}
 
-@media(max-width:800px) {
-    body {
-        font-size: 15px;
+    .requirements-pic {
+        height: 15px;
     }
-}
 
-@media(max-width:680px) {
-    .footer-header-logo {
-        width: 200px;
-    }
-}
-
-@media(max-width:640px) {
-    input {
+    button {
         width: 100px;
     }
-    
-    button {
-        width: 100px
-    }
 
+    .persons-input {
+        width: 100px;
+    }
+}
+
+@media(max-width:450px) {
+    
     .requirements-div {
-        gap: 0;
+        gap: 0px;
         justify-content: space-between;
     }
 
     .requirements {
         align-items: center;
     }
+}
+
+@media(max-width:767px) {
+    header {
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hidden-header-links {
+        padding-right: 16px;
+    }
+
+    main {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer-header-logo {
+        width: 200px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .requirements {
+        gap:5px
+    }
+
+    .burger-menu {
+        height: 30px;
+    }
 
     .requirements-pic {
         height: 10px;
     }
 
+    button {
+        width: 75px;
+        height: 30px;
+    }
+
+    .persons-input {
+        width: 75px;
+        height: 24px;
+        margin-left: 10px;
+    }
+
 }
 
-@media(max-width:500px) {
-    main {
-        padding: 25px;
-    }
-    header {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
 
-    .burger-menu {
-        height: 20px;
-    }
 
-    .hidden-header-links {
-        padding-right: 25px;
-    }
-    
-}
-
-@media(max-width: 450px) {
-    .requirements {
-        font-size: 9px;
-        gap: 0;
-    }
-}

@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+        <a href="index.html"><img class="footer-header-logo" src="./img/logo.png" alt="logo"></a>
 
         <nav class="header-links">
             <a href="index.html">Start</a>
@@ -24,8 +24,15 @@
             <a href="Contact.html">Kontakt</a>
             <a href="Impressum.html">Impressum</a>
         </nav>
-    </header>
 
+        <img class="burger-menu" onclick="hidden_menu()" src="./img/burger menu.png" alt="menu">
+    </header>
+    <nav class="hidden-header-links hide" id="hide-menu">
+        <a href="index.html">Start</a>
+        <a href="Manti.html">Rezept des Tages</a>
+        <a href="Contact.html">Kontakt</a>
+        <a href="Impressum.html">Impressum</a>
+    </nav>
     <main>
         <h1>Manti</h1>
 
@@ -40,16 +47,16 @@
 
         <div class="number-of-persons">
             <p>Zutaten für</p>
-            <input class="persons-input" type="number">
-            <button>Portionen</button>
+            <input id="number-of-persons" class="persons-input" type="number" max="20" min="1" value="4" required>
+            <button onclick="MantiAmmount()">Portionen</button>
         </div>
 
         <ul>
-            <li class="li">2 Eier</li>
-            <li>300ml Wasser</li>
-            <li class="li">1000g Mehl</li>
-            <li>1000g Hackfleisch</li>
-            <li class="li">4 Zwiebel(n)</li>
+            <li id="eier" class="li">4 Ei(er)</li>
+            <li id="wasser">400ml Wasser</li>
+            <li id="mehl" class="li">1200g Mehl</li>
+            <li id="hackfleisch">800g Hackfleisch</li>
+            <li id="zwiebel" class="li">4 Zwiebel(n)</li>
             <li>Salz</li>
             <li class="li">Pfeffer</li>
         </ul>
@@ -83,8 +90,8 @@
     </main>
 
     <footer>
-        <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+        <a href="index.html"><img class="footer-header-logo" src="./img/logo.png" alt="logo"></a>
     </footer>
 </body>
-
+<script src="PannaCottaScript.js"></script>
 </html>
