@@ -22,7 +22,8 @@ body {
 
 
 header {
-    padding: 0px 160px;
+    padding-left: 160px;
+    padding-right: 160px;
     display: flex;
     justify-content: space-between;
     border-bottom-style: solid;
@@ -46,6 +47,14 @@ main {
     gap: 20px;
     font-weight: bold;
     padding-bottom: 10px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.hidden-header-links {
+    display: none;
 }
 
 a {
@@ -159,12 +168,12 @@ h2 {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            order: -1;
+            
         }
     }
 
     .media {
-        font-size: 24px;
+        
         flex-direction: column;
     }
 
@@ -173,8 +182,8 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 24px;
-        margin-left: 40px;
+        
+        
     }
 }
 
@@ -270,6 +279,66 @@ h2 {
     .preselection_soljanka {
         gap: 8px;
     }
+
+    .burger-menu {
+    display: none;
+    }
+
+    .hidden-header-links {
+        display: none;
+    }
+    body {
+        font-size: 20px;
+    }
+
+    header {
+        padding-left: 24px;
+        padding-right: 24px;
+        align-items: center;
+    }
+
+    main {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        height: 40px;
+        background-color: gray;
+    }
+    
+    .hidden-header-links {
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .text {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .wok-jpg {
+        width: 500px;
+        height: 250px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -294,6 +363,63 @@ h2 {
     .preselection_soljanka {
         gap: 8px;
     }
+
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .manti-pic {
+        width: 80%;
+        height: 250px;
+    }
+
+    .recipe-of-the-day {
+        padding-left: 0;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .section1 h2 {
+        margin-bottom: 0;
+    }
+    
+    p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    button {
+        margin-top: 0;
+    }
+    
+    .footer-header-logo {
+        width: 200px;
+    }
+
+    header {
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    footer {
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .burger-menu {
+        height: 30px;
+    }
+
+    .hidden-header-links {
+        padding-right: 16px;
+    }
+
+    body {
+        font-size: 16px
+    }
 }
 
 
@@ -301,8 +427,8 @@ h2 {
 
 
 footer {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 16px;
+    padding-right: 160px;
     background-color: rgba(64, 59, 59, 0.76);
     margin: 0;
 }
