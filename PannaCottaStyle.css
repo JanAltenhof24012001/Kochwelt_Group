@@ -183,11 +183,11 @@ footer {
     }
     
     .hidden-header-links {
-    padding-right: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: end;
+        padding-right: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: end;
     }
 
     .hide {
@@ -236,6 +236,7 @@ footer {
     }
 
     footer {
+        height: 64px;
         padding-left: 16px;
         padding-right: 16px;
     }
