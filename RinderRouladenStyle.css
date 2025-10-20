@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-family: Raleway, sans-serif;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 
 @font-face {
     font-family: Raleway;
-    src: url(Raleway\static\Raleway-Regular.ttf);
+    src: url(Raleway/static/Raleway-Regular.ttf);
 }
 
 .burger-menu {

@@ -5,11 +5,12 @@ html {
     scroll-behavior: smooth;
     display: flex;
     justify-content: center;
+    transition: font-size 0.5s ease-out;
 }
 
 @font-face {
     font-family: Raleway;
-    src: url(Raleway\static\Raleway-Regular.ttf);
+    src: url(Raleway/static/Raleway-Regular.ttf);
 }
 
 body {
@@ -22,30 +23,26 @@ main {
     padding: 0;
     display: flex;
     flex-direction: column;
-    padding: 20px 160px;
+    padding: 20px 100px;
     gap: 20px;
     max-width: 1920px;
 
 }
 
 header {
-    background-color: white;
-    width: 100vw;
     border-bottom-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header_content {
-        display: flex;
+    display: flex;
     justify-content: space-between;
     max-width: 1920px;
-    padding: 12px 160px;
+    padding: 0px 100px;
 }
 
+
+
 h1 {
-    color: white;
     font-size: 96px;
     font-weight: bold;
     text-align: center;
@@ -69,14 +66,21 @@ button {
     width: 150px;
     background-color: rgb(0, 128, 19);
     color: white;
-    font-weight: bold;
     height: 45px;
+    font-family: Raleway, bold;
+    border: 0px;
+    padding: 0px;
+
 }
 
 button:hover {
-    background-color: rgb(0, 128, 19);
+    background-color: rgb(0, 161, 19);
     cursor: pointer;
 
+}
+
+.burger-menu {
+    display: none;
 }
 
 
@@ -94,7 +98,23 @@ button:hover {
     text-decoration: none;
 }
 
+.nav_button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-color: rgb(0, 161, 19);
+    color: rgb(0, 161, 19);
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+}
+
+.potion_input_area p {
+
+    padding-right: 15px;
+}
+
 .multiplaktor_potion {
+    border: 0px;
+    padding: 0px;
     width: 150px;
     height: 45px;
 }
@@ -102,7 +122,6 @@ button:hover {
 .scale_graphic {
     width: 24px;
     height: auto;
-    background-color: rgb(239, 239, 239, 0.94);
     border-radius: 10px;
     padding: 10px;
 }
@@ -114,21 +133,36 @@ button:hover {
 
 .impingement {
     display: flex;
+    align-items: center;
     gap: 10px;
+    background-color: rgb(239, 239, 239, 0.94);
+    border-radius: 10px;
+    padding: 5px 10px 5px 5px;
+}
+
+.impingement p {
+    margin: 0px;
 }
 
 .food_print {
+    background-image: url(img/soljanka-2072551_1920.jpg);
     width: 100%;
     height: 350px;
     border-radius: 20px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
 
 }
 
 .potion_input_area {
     display: flex;
     align-items: center;
-    gap: 20px;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px -5px 0px rgba(0, 0, 0, 0.1);
+
 }
 
 .list_of_ingredients {
@@ -139,7 +173,7 @@ button:hover {
 
 .ingredients {
     display: flex;
-    background-color: #EFEFEF;
+    background-color: rgb(239, 239, 239);
     border-radius: 10px;
     padding: 10px 30px;
     margin-top: 10px;
@@ -148,7 +182,7 @@ button:hover {
 
 .ingredients2 {
     display: flex;
-    background-color: rgb(239, 239, 239, 0.94);
+    background-color: rgb(239, 239, 239, );
     border-radius: 10px;
     padding: 10px 30px;
     margin-top: 10px;
@@ -162,14 +196,89 @@ button:hover {
 }
 
 .created_by_area img {
-    width: 45px;
+    width: 60px;
     height: auto;
 }
 
 footer {
     background-color: rgba(64, 59, 59, 0.76);
-}
-.footer_content {
-    padding: 100px 160px;
+    padding: 30px 100px;
     max-width: 1920px;
+}
+
+footer img {
+    width: auto;
+    height: 72px;
+}
+
+@media(max-width:1170px) {
+    html {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    .header,
+    .main,
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .burger-menu {
+        display: block;
+        height: 40px;
+        background-color: gray;
+    }
+
+    .navigation {
+        position: relative;
+        right: 20px;
+        top: 160px;
+        padding-right: 100px;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: end;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .header,
+    .main,
+    .footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
 }

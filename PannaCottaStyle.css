@@ -1,12 +1,12 @@
 @font-face {
     font-family: Raleway;
-    src: url(Raleway\static\Raleway-Regular.ttf);
+    src: url(Raleway/static/Raleway-Regular.ttf);
 }
 
 body {
     margin: 0;
-    font-family: "Raleway", sans-serif;
-    font-size: 25px;
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
 }
 
 header {
@@ -98,7 +98,7 @@ main {
 
 button {
     width: 150px;
-    background-color: green;
+    background-color: rgb(0, 128, 0);
     color: white;
     font-weight: bold;
     height: 45px;
@@ -121,7 +121,7 @@ li {
     padding-left: 30px;
 }
 .li {
-    background-color: #EFEFEF;
+    background-color: rgb(239, 239, 239);
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;

@@ -1,12 +1,12 @@
 @font-face {
     font-family: Raleway;
-    src: url(Raleway\static\Raleway-Regular.ttf);
+    src: url(Raleway/static/Raleway-Regular.ttf);
 }
 
 body {
     margin: 0;
-    font-family: "Raleway", sans-serif;
-    font-size: 25px;
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
 }
 
 header {

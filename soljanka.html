@@ -8,37 +8,25 @@
 
     <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
     <link rel="stylesheet" href="./SoljankaStylee.css">
-    <script src="PannaCottaScript.js" defer></script>
 
 </head>
 
-<body>
+<body onload="init_multiplied()">
     <header>
-        <div class="header_content">
-            <a href="index.html"><img src="img/logo.png" alt="Kochwelt Logo"></a>
-            <nav class="navigation">
-                <a class="nav_button" href="index.html">Start</a>
-                <a class="nav_button" href="Manti.html">Rezept des Tages</a>
-                <a class="nav_button" href="Contact.html">Kontakt</a>
-                <a class="nav_button" href="Impressum.html">Impressum</a>
-            </nav>
+        <a href="index.html"><img src="img/logo.png" alt="Kochwelt Logo"></a>
 
-
-            <!-- <img class="burger-menu" onclick="hidden_menu()" src="./img/burger menu.png" alt="menu">
-
+        <img class="burger-menu" onclick="toggle_menu()" src="./img/burger menu.png" alt="menu">
         <nav class="navigation">
-            <a class="nav_button"
-                href="https://kochwelt-539.developerakademie.net/Kochwelt%20Gruppe/index.html">Start</a>
+            <a class="nav_button" href="index.html">Start</a>
             <a class="nav_button" href="Manti.html">Rezept des Tages</a>
             <a class="nav_button" href="Contact.html">Kontakt</a>
             <a class="nav_button" href="Impressum.html">Impressum</a>
-        </nav> -->
-        </div>
+        </nav>
     </header>
     <main>
         <section class="section1">
             <h2> Soljanka</h2>
-            <img class="food_print" src="img/soljanka-2072551_1920.jpg" alt="Soljanka">
+            <div class="food_print"></div>
             <div class="Expense">
                 <div class="impingement">
                     <img class="scale_graphic" src="img/icons/clock-regular.svg" alt="clock">
@@ -61,21 +49,22 @@
                 <div class="potion_input_area">
 
                     <p>Zutaten für</p>
-                    <input class="multiplaktor_potion" type="number" max="20" min="1" value="1" required>
+                    <input class="multiplaktor_potion" id="multiplied-persons" type="number" max="20" min="1" value="1" required>
                     <button onclick="set_multiplied()" class="multiplaktor_button">Portionen</button>
                 </div>
                 <ul class="list_of_ingredients">
-                    <li class="ingredients">500g Rindfleisch</li>
-                    <li class="ingredients2">500g Schweinefleisch</li>
-                    <li class="ingredients">5 EL Tomatenmark</li>
-                    <li class="ingredients2">3 große Zwiebel</li>
-                    <li class="ingredients">2 Glas Letscho (ca. 720g)</li>
-                    <li class="ingredients2">1 Glas Gewürzgurken (ca. 700g)</li>
-                    <li class="ingredients">700ml passierte Tomaten</li>
-                    <li class="ingredients2">1L Wasser</li>
-                    <li class="ingredients">1 TL Paprikapulver (edelsüß)</li>
-                    <li class="ingredients2">1 Becher Schmand oder Saure Sahne (optional)</li>
-                    <li class="ingredients">1 Zitrone (optional)</li>
+                    <div id="ingredientslist"></div>
+                    <!-- <li class="ingredients" id="Rindfleisch">500g Rindfleisch</li>
+                    <li class="ingredients2" id="Schweinefleisch">500g Schweinefleisch</li>
+                    <li class="ingredients" id="Tomatenmark">5 EL Tomatenmark</li>
+                    <li class="ingredients2" id="Zwiebel">3 große Zwiebel</li>
+                    <li class="ingredients" id="Letscho">2 Glas Letscho (ca. 720g)</li>
+                    <li class="ingredients2" id="Gewürzgurken">1 Glas Gewürzgurken (ca. 700g)</li>
+                    <li class="ingredients" id="passierte_Tomaten">700ml passierte Tomaten</li>
+                    <li class="ingredients2" id="Wasser">1L Wasser</li>
+                    <li class="ingredients" id="Paprikapulver">1 TL Paprikapulver (edelsüß)</li>
+                    <li class="ingredients2" id="Schmand">1 Becher Schmand oder Saure Sahne (optional)</li>
+                    <li class="ingredients" id="Zitrone">1 Zitrone (optional)</li> -->
                     <li class="ingredients2">Salz und Pfeffer nach Geschmack</li>
                     <li class="ingredients">Öl zum Anbraten</li>
                 </ul>
@@ -132,13 +121,12 @@
 
 
     <footer>
-        <div class="footer_content">
-            <a href="index.html"><img src="img/logo.png" alt="Kochwelt Logo"></a>
-            <div>
+        <a href="index.html"><img src="img/logo.png" alt="Kochwelt Logo"></a>
+        <div>
 
-            </div>
         </div>
     </footer>
 </body>
+    <script src="PannaCottaScript.js" defer></script>
 
 </html>
