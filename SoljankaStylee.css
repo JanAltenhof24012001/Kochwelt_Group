@@ -64,7 +64,7 @@ h3 {
 
 button {
     width: 150px;
-    background-color: rgb(0, 128, 19);
+    background-color: rgb(0, 128, 0);
     color: white;
     height: 45px;
     font-family: Raleway, bold;
@@ -74,7 +74,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(0, 161, 19);
+    background-color: rgb(0, 161, 0);
     cursor: pointer;
 
 }
@@ -101,8 +101,8 @@ button:hover {
 .nav_button:hover {
     text-decoration: underline;
     cursor: pointer;
-    text-decoration-color: rgb(0, 161, 19);
-    color: rgb(0, 161, 19);
+    text-decoration-color: rgb(0, 161, 0);
+    color: rgb(0, 161, 0);
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
 }
@@ -117,29 +117,27 @@ button:hover {
 }
 
 .multiplaktor_potion {
-    border: 0px;
     padding: 0px;
-    width: 150px;
     height: 45px;
+    border-radius: 10px 0px 0px 10px;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 .scale_graphic {
-    width: 24px;
-    height: auto;
+    height: 20px;
     border-radius: 10px;
-    padding: 10px;
 }
 
 .Expense {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .impingement {
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: rgb(239, 239, 239, 0.94);
+    background-color: rgb(239, 239, 239);
     border-radius: 10px;
     padding: 5px 10px 5px 5px;
 }
@@ -186,7 +184,7 @@ button:hover {
 
 .ingredients2 {
     display: flex;
-    background-color: rgb(239, 239, 239, );
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px 30px;
     margin-top: 10px;
@@ -236,6 +234,10 @@ footer img {
         align-items: center;
     }
 
+    button {
+        width: 100px;
+    }
+
     header,
     main,
     footer {
@@ -261,6 +263,10 @@ footer img {
         display: none;
     }
 
+    .scale_graphic {
+        height: 15px;
+    }
+
     .navigation {
         position: relative;
         right: 20px;
@@ -270,6 +276,10 @@ footer img {
         flex-direction: column;
         gap: 10px;
         align-items: end;
+    }
+
+    .multiplaktor_potion {
+        width: 100px;
     }
 }
 
@@ -294,6 +304,11 @@ footer img {
         width: 200px;
     }
 
+    button {
+        width: 75px;
+        height: 30px;
+    }
+
     header,
     main,
     footer {
@@ -303,6 +318,20 @@ footer img {
 
     .hidden_navigation {
         padding-right: 16px;
+    }
+
+    .scale_graphic {
+        height: 10px;
+    }
+    .impingement,
+    .Expense {
+        gap: 5px;
+    }
+
+    .multiplaktor_potion {
+        width: 75px;
+        height: 24px;
+        margin-left: 10px;
     }
 
 }
