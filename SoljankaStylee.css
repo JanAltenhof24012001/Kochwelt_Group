@@ -241,8 +241,8 @@ footer img {
     header,
     main,
     footer {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .hidden_navigation {
@@ -309,14 +309,11 @@ footer img {
         height: 30px;
     }
 
+    .hidden_navigation,
     header,
     main,
     footer {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-
-    .hidden_navigation {
+        padding-left: 16px;
         padding-right: 16px;
     }
 
