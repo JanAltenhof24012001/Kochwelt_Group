@@ -47,16 +47,16 @@
 
         <div class="number-of-persons">
             <p>Zutaten für</p>
-            <input class="persons-input" type="number">
-            <button>Portionen</button>
+            <input id="number-of-persons" class="persons-input" type="number" max="20" min="1" value="4" required>
+            <button onclick="MantiAmmount()">Portionen</button>
         </div>
 
         <ul>
-            <li class="li">2 Eier</li>
-            <li>300ml Wasser</li>
-            <li class="li">1000g Mehl</li>
-            <li>1000g Hackfleisch</li>
-            <li class="li">4 Zwiebel(n)</li>
+            <li id="eier" class="li">4 Ei(er)</li>
+            <li id="wasser">400ml Wasser</li>
+            <li id="mehl" class="li">1200g Mehl</li>
+            <li id="hackfleisch">800g Hackfleisch</li>
+            <li id="zwiebel" class="li">4 Zwiebel(n)</li>
             <li>Salz</li>
             <li class="li">Pfeffer</li>
         </ul>

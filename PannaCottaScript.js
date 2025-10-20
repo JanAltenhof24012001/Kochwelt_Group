@@ -8,15 +8,29 @@ const numberofpersons = document.getElementById('number-of-persons');
 
 
 function ammount() {
-    document.getElementById('schlagsahne').innerHTML =  (400 * numberofpersons.value) + 'ml Schlagsahne'
-    document.getElementById('milch').innerHTML =  (4 * numberofpersons.value) + 'EL Milch'
-    document.getElementById('schokolade').innerHTML =  (100 * numberofpersons.value) + 'g Schokolade'
-    document.getElementById('vanille-zucker').innerHTML =  (20 * numberofpersons.value) + 'g Vanille Zucker'
-    document.getElementById('gelatine').innerHTML =  (8 * numberofpersons.value) + 'Blätter Gelatine'
-    document.getElementById('himbeere').innerHTML =  (40 * numberofpersons.value) + 'g himbeere'
-    document.getElementById('zucker').innerHTML =  (20 * numberofpersons.value) + 'g Zucker'
-
+    document.getElementById('schlagsahne').innerHTML =  (100 * numberofpersons.value) + 'ml Schlagsahne'
+    document.getElementById('milch').innerHTML =  (1 * numberofpersons.value) + 'EL Milch'
+    document.getElementById('schokolade').innerHTML =  (25 * numberofpersons.value) + 'g Schokolade'
+    document.getElementById('vanille-zucker').innerHTML =  (5 * numberofpersons.value) + 'g Vanille Zucker'
+    document.getElementById('gelatine').innerHTML =  (2 * numberofpersons.value) + 'Blätter Gelatine'
+    document.getElementById('himbeere').innerHTML =  (10 * numberofpersons.value) + 'g himbeere'
+    document.getElementById('zucker').innerHTML =  (5 * numberofpersons.value) + 'g Zucker'
+    document.getElementById('eier').innerHTML =  (1 * numberofpersons.value) + 'ei(er)'
+    document.getElementById('wasser').innerHTML =  (100 * numberofpersons.value) + 'ml Wasser'
+    document.getElementById('mehl').innerHTML =  (300 * numberofpersons.value) + 'g Mehl'
+    document.getElementById('hackfleisch').innerHTML =  (200 * numberofpersons.value) + 'g Hackfleisch'
+    document.getElementById('zwiebel').innerHTML =  (1 * numberofpersons.value) + 'Zwiebel'
+    
 }
+
+function MantiAmmount() {
+    document.getElementById('eier').innerHTML =  (1 * numberofpersons.value) + 'Ei(er)'
+    document.getElementById('wasser').innerHTML =  (100 * numberofpersons.value) + 'ml Wasser'
+    document.getElementById('mehl').innerHTML =  (300 * numberofpersons.value) + 'g Mehl'
+    document.getElementById('hackfleisch').innerHTML =  (200 * numberofpersons.value) + 'g Hackfleisch'
+    document.getElementById('zwiebel').innerHTML =  (1 * numberofpersons.value) + 'Zwiebel'
+}
+
 
 
 
