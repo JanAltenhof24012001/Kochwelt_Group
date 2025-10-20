@@ -30,7 +30,7 @@ body {
     width: 350px;
 }
 
-.btn {
+.nav-container .btn {
     text-decoration: none;
     color: black;
     margin-right: 30px;
@@ -44,6 +44,10 @@ body {
         text-decoration-thickness: 5px;
         color: #008000;
     }
+}
+
+.hitten-links {
+    display: none;
 }
 
 .logo {
@@ -125,6 +129,7 @@ li {
     padding-left: 30px;
     list-style-type: none;
 }
+
 .li {
     background-color: #EFEFEF;
     border-radius: 10px;
@@ -187,6 +192,10 @@ footer {
         align-items: center;
     }
 
+    .nav-container {
+        display: none;
+    }
+
     .header-links {
         display: none;
     }
@@ -199,5 +208,13 @@ footer {
 
     .hide {
         display: none;
+    }
+
+    .hitten-links {
+        padding-right: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: end;
     }
 }

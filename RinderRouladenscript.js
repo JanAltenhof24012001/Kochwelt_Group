@@ -1,5 +1,5 @@
 function hidden_menu() {
-    document.getElementById('btn').classList.toggle('hide');
+    document.getElementById('hide-menu').classList.toggle('hide');
 }
 
 const numberofpersons = document.getElementById('number-of-persons');
