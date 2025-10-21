@@ -30,7 +30,23 @@ body {
     width: 350px;
 }
 
-.nav-container .btn {
+.nav-container {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 24px;
+
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 5px;
+        color: #008000;
+    }
+}
+
+.btn {
     text-decoration: none;
     color: black;
     margin-right: 30px;
@@ -106,13 +122,12 @@ body {
 }
 
 .Ingredients {
-    font-size: 21px;
-    font-weight: bold;
+    font-size: 24px;
     margin-left: 30px;
 }
 
 .input {
-    padding-top: 4px;
+    padding-top: 7px;
     padding-bottom: 4px;
     margin-left: 20px;
 }
@@ -187,9 +202,23 @@ footer {
     margin: 0;
 }
 
-@media(max-width:1170px) {
+@media(max-width: 1280px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
     header {
         align-items: center;
+    }
+
+    .logo {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .nav-container {
@@ -200,12 +229,15 @@ footer {
         display: none;
     }
 
+    .logo-media {
+        width: 200px;
+    }
+
     .burger-menu {
         display: block;
         height: 40px;
         background-color: grey;
     }
-
 
     .hitten-links {
         padding-right: 24px;
@@ -213,9 +245,116 @@ footer {
         flex-direction: column;
         gap: 10px;
         align-items: end;
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 5px;
+            color: #008000;
+        }
     }
 
     .hide {
         display: none;
+    }
+
+    .btn {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .difficulty-box {
+        height: 15px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .burger-menu {
+        display: block;
+        height: 30px;
+        background-color: grey;
+    }
+
+    .ditail-box {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 15px;
+
+    }
+
+    .difficulty-box {
+        height: 10px;
+        justify-content: space-around;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .difficulty-pic {
+        height: 10px;
+    }
+
+    .Ingredients {
+        font-size: 16px;
+        font-weight: 0;
+        margin: 0;
+
+    }
+
+    .number-of-persons {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+
+    #number-of-persons {
+        width: 75px;
+        height: 16px;
+    }
+
+    .ul {
+        padding: 16px;
+    }
+
+    .preparation {
+        font-size: 16px;
+    }
+
+    .ditail-box-media {
+        margin: 0;
+    }
+
+    .creator {
+        font-size: 16px;
+        margin: 0;
+    }
+        #profile{
+        border-radius: 100%;
+        width: 15%;
+    }
+
+    .profile-png{
+        gap: 15px;
+    }
+
+    .footer {
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer-header-logo {
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
