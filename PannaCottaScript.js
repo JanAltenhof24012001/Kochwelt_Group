@@ -8,19 +8,51 @@ const numberofpersons = document.getElementById('number-of-persons');
 
 
 function ammount() {
-    document.getElementById('schlagsahne').innerHTML = (100 * numberofpersons.value) + 'ml Schlagsahne'
-    document.getElementById('milch').innerHTML = (1 * numberofpersons.value) + 'EL Milch'
-    document.getElementById('schokolade').innerHTML = (25 * numberofpersons.value) + 'g Schokolade'
-    document.getElementById('vanille-zucker').innerHTML = (5 * numberofpersons.value) + 'g Vanille Zucker'
-    document.getElementById('gelatine').innerHTML = (2 * numberofpersons.value) + 'Blätter Gelatine'
-    document.getElementById('himbeere').innerHTML = (10 * numberofpersons.value) + 'g himbeere'
-    document.getElementById('zucker').innerHTML = (5 * numberofpersons.value) + 'g Zucker'
-    document.getElementById('eier').innerHTML = (1 * numberofpersons.value) + 'ei(er)'
-    document.getElementById('wasser').innerHTML = (100 * numberofpersons.value) + 'ml Wasser'
-    document.getElementById('mehl').innerHTML = (300 * numberofpersons.value) + 'g Mehl'
-    document.getElementById('hackfleisch').innerHTML = (200 * numberofpersons.value) + 'g Hackfleisch'
-    document.getElementById('zwiebel').innerHTML = (1 * numberofpersons.value) + 'Zwiebel'
 
+    if (numberofpersons.value < 1) {
+        document.getElementById('number-of-persons').value = '1'
+        document.getElementById('schlagsahne').innerHTML = (100 * 1) + 'ml Schlagsahne'
+        document.getElementById('milch').innerHTML = (1 * 1) + 'El Milch'
+        document.getElementById('schokolade').innerHTML = (25 * 1) + 'g Weiße Schokolade'
+        document.getElementById('vanille-zucker').innerHTML = (5 * 1) + 'g Vanille Zucker'
+        document.getElementById('gelatine').innerHTML = (2 * 1) + ' Blätter Gelatine'
+        document.getElementById('himbeere').innerHTML = (10 * 1) + 'g Himbeeren'
+        document.getElementById('zucker').innerHTML = (5 * 1) + 'g Zucker'
+        document.getElementById('eier').innerHTML = (1 * 1) + ' ei(er)'
+        document.getElementById('wasser').innerHTML = (100 * 1) + 'ml Wasser'
+        document.getElementById('mehl').innerHTML = (300 * 1) + 'g Mehl'
+        document.getElementById('hackfleisch').innerHTML = (200 * 1) + 'g Hackfleisch'
+        document.getElementById('zwiebel').innerHTML = (1 * 1) + 'Zwiebeln'
+    }
+    if (numberofpersons.value > 20) {
+        document.getElementById('number-of-persons').value = '20'
+        document.getElementById('schlagsahne').innerHTML = (100 * 20) + 'ml Schlagsahne'
+        document.getElementById('milch').innerHTML = (1 * 20) + 'El Milch'
+        document.getElementById('schokolade').innerHTML = (25 * 20) + 'g Weiße Schokolade'
+        document.getElementById('vanille-zucker').innerHTML = (5 * 20) + 'g Vanille Zucker'
+        document.getElementById('gelatine').innerHTML = (2 * 20) + ' Blätter Gelatine'
+        document.getElementById('himbeere').innerHTML = (10 * 20) + 'g Himbeeren'
+        document.getElementById('zucker').innerHTML = (5 * 20) + 'g Zucker'
+        document.getElementById('eier').innerHTML = (1 * 20) + ' ei(er)'
+        document.getElementById('wasser').innerHTML = (100 * 20) + 'ml Wasser'
+        document.getElementById('mehl').innerHTML = (300 * 20) + 'g Mehl'
+        document.getElementById('hackfleisch').innerHTML = (200 * 20) + 'g Hackfleisch'
+        document.getElementById('zwiebel').innerHTML = (1 * 20) + 'Zwiebeln'
+    }
+    else { 
+        document.getElementById('schlagsahne').innerHTML = (100 * numberofpersons.value) + 'ml Schlagsahne'
+        document.getElementById('milch').innerHTML = (1 * numberofpersons.value) + 'El Milch'
+        document.getElementById('schokolade').innerHTML = (25 * numberofpersons.value) + 'g Weiße Schokolade'
+        document.getElementById('vanille-zucker').innerHTML = (5 * numberofpersons.value) + 'g Vanille Zucker'
+        document.getElementById('gelatine').innerHTML = (2 * numberofpersons.value) + ' Blätter Gelatine'
+        document.getElementById('himbeere').innerHTML = (10 * numberofpersons.value) + 'g Himbeeren'
+        document.getElementById('zucker').innerHTML = (5 * numberofpersons.value) + 'g Zucker'
+        document.getElementById('eier').innerHTML = (1 * numberofpersons.value) + ' ei(er)'
+        document.getElementById('wasser').innerHTML = (100 * numberofpersons.value) + 'ml Wasser'
+        document.getElementById('mehl').innerHTML = (300 * numberofpersons.value) + 'g Mehl'
+        document.getElementById('hackfleisch').innerHTML = (200 * numberofpersons.value) + 'g Hackfleisch'
+        document.getElementById('zwiebel').innerHTML = (1 * numberofpersons.value) + ' Zwiebel'
+    }
 }
 
 function MantiAmmount() {
