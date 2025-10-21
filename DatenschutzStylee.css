@@ -42,13 +42,6 @@ main {
     padding: 20px 160px;
 }
 
-.Disclmaimer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-bottom: 20px;
-}
-
 header {
     padding: 0px 160px;
     display: flex;
