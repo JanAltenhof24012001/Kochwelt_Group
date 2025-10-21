@@ -95,6 +95,9 @@ function init_multiplied() {
     set_clearmultiplied();
 }
 
+
+
+
 function set_clearmultiplied() {
     let ingredientsList = document.getElementById('ingredientslist');
     let numberofpersons = document.getElementById('multiplied-persons');
@@ -102,21 +105,23 @@ function set_clearmultiplied() {
 
     console.log(numberofpersons.value);
 
+    if (numberofpersons.value < 1) {
+        document.getElementById('multiplied-persons').value = '4'
+        numberofpersons.value = 4;
+    }
+    if (numberofpersons.value > 20) {
+        document.getElementById('multiplied-persons').value = '4'
+        numberofpersons.value = 4;
+    }
     let predictioningredients = [];
     for (let i = 0; i < ingredients.length; i++) {
         predictioningredients.push({ ...ingredients[i] });
     }
-    console.log(predictioningredients);
-    console.log(ingredients);
-
 
     for (let indexingredients = 0; indexingredients < predictioningredients.length; indexingredients++) {
         predictioningredients[indexingredients].amount =
             (predictioningredients[indexingredients].amount * numberofpersons.value).toFixed(2);
-        console.log(predictioningredients[indexingredients].amount);
     }
-
-    console.log(predictioningredients);
 
     for (let indexingredients = 0; indexingredients < predictioningredients.length; indexingredients++) {
         if (predictioningredients[indexingredients].amount < 1000) {
@@ -128,7 +133,6 @@ function set_clearmultiplied() {
             predictioningredients[indexingredients].unit = predictioningredients[indexingredients].unit.replace('g', 'kg');
             predictioningredients[indexingredients].amount = (predictioningredients[indexingredients].amount / 1000).toFixed(2);
         }
-        console.log(predictioningredients[indexingredients]);
     }
 
     for (let indexingredients = 0; indexingredients < predictioningredients.length; indexingredients++) {
