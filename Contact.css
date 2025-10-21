@@ -1,5 +1,13 @@
 html {
     font-family: Raleway, sans-serif;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 @font-face {
     font-family: Raleway;
@@ -9,11 +17,15 @@ html {
 main {
     display: flex;
     justify-content: center;
+    padding-left: 160px;
+    padding-right: 160px;
+    flex: 1;
 }
 
 header {
-    padding-left: 100px;
-    padding-right: 100px;
+    height: 116px;
+    padding-left: 160px;
+    padding-right: 160px;
     display: flex;
     justify-content: space-between;
     border-bottom-style: solid;
@@ -23,12 +35,20 @@ header {
 }
 
 .header-links {
+    font-size: 24px;
     display: flex;
     align-items: end;
     gap: 20px;
     font-weight: bold;
     padding-bottom: 10px;
-    font-size: 24px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.hidden-header-links {
+    display: none;
 }
 
 a {
@@ -41,6 +61,14 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+label {
+    font-size: 24px;
 }
 
 .Contact-box {
@@ -79,14 +107,112 @@ a:hover {
 }
 
 footer {
-    padding-left: 100px;
-    padding-right: 100px;
+    height: 124px;
+    padding-left: 160px;
+    padding-right: 160px;
     background-color: rgba(64, 59, 59, 0.76);
     margin: 0;
 }
 
-@media(max-width:1200px) {
+@media(max-width:1280px) {
+    header {
+        padding-left: 24px;
+        padding-right: 24px;
+        align-items: center;
+    }
+
+    main {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
     .header-links {
         display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        height: 40px;
+        background-color: gray;
+    }
+    
+    .hidden-header-links {
+        font-size: 20px;
+        padding-right: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: end;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    
+    .Input {
+        width: 200px;
+    }
+
+    .Input-Nachricht {
+        width: 200px;
+    }
+
+    .Contact-box {
+        width: 200px;
+        align-items: center;
+    }
+
+    .footer-header-logo {
+        width: 200px;
+    }
+
+    .burger-menu {
+        height: 30px;
+    }
+
+    header {
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    main {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    footer {
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .hidden-header-links {
+        font-size: 16px;
+        padding-right: 16px;
+    }
+    
+    label {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 16px;
     }
 }

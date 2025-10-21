@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-    <script src="Contactscript.js"></script>
     <link rel="stylesheet" href="Contact.css">
-     <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+     
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+        <a href="index.html"><img class="footer-header-logo" src="./img/logo.png" alt="logo"></a>
 
         <nav class="header-links">
             <a href="index.html">Start</a>
@@ -20,8 +20,14 @@
             <a href="Contact.html">Kontakt</a>
             <a href="Impressum.html">Impressum</a>
         </nav>
+        <img class="burger-menu" onclick="hidden_menu()" src="./img/burger menu.png" alt="menu">
     </header>
-
+    <nav class="hidden-header-links hide" id="hide-menu">
+        <a href="index.html">Start</a>
+        <a href="Manti.html">Rezept des Tages</a>
+        <a href="Contact.html">Kontakt</a>
+        <a href="Impressum.html">Impressum</a>
+    </nav>
 
     <main>
         <form class="Contact-box" onsubmit="sendMail (event)">
@@ -32,7 +38,7 @@
             <label for="lname">Deine Email:</label><br>
             <input class="Input" type="text" id="lname" name="Email" value=""><br><br>
 
-            <label for="text">Deine Nachricht</label>
+            <label for="text">Deine Nachricht</label><br>
             <input class="Input-Nachricht" type="text" id="text" name="text" value=""><br><br>
 
             <input class="Abschicken-btn" type="submit" value="Abschicken">
@@ -43,5 +49,5 @@
         <a href="index.html"><img class="footer-header-logo" src="./img/logo.png" alt="logo"></a>
     </footer>
 </body>
-
+<script src="Contactscript.js"></script>
 </html>

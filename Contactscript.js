@@ -13,3 +13,7 @@ function sendMail (event){
         console.log(error);
     });
 }
+
+function hidden_menu() {
+    document.getElementById('hide-menu').classList.toggle('hide');
+}
