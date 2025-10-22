@@ -56,13 +56,30 @@ function ammount() {
 }
 
 function MantiAmmount() {
-    document.getElementById('eier').innerHTML = (1 * numberofpersons.value) + 'Ei(er)'
-    document.getElementById('wasser').innerHTML = (100 * numberofpersons.value) + 'ml Wasser'
-    document.getElementById('mehl').innerHTML = (300 * numberofpersons.value) + 'g Mehl'
-    document.getElementById('hackfleisch').innerHTML = (200 * numberofpersons.value) + 'g Hackfleisch'
-    document.getElementById('zwiebel').innerHTML = (1 * numberofpersons.value) + 'Zwiebel'
+    if (numberofpersons.value < 1) {
+        document.getElementById('number-of-persons').value = '1'
+        document.getElementById('eier').innerHTML = (1 * 1) + 'Ei(er)'
+        document.getElementById('wasser').innerHTML = (100 * 1) + 'ml Wasser'
+        document.getElementById('mehl').innerHTML = (300 * 1) + 'g Mehl'
+        document.getElementById('hackfleisch').innerHTML = (200 * 1) + 'g Hackfleisch'
+        document.getElementById('zwiebel').innerHTML = (1 * 1) + 'Zwiebel'
+    }
+    if (numberofpersons.value > 20) {
+        document.getElementById('number-of-persons').value = '20'
+        document.getElementById('eier').innerHTML = (1 * 20) + 'Ei(er)'
+        document.getElementById('wasser').innerHTML = (100 * 20) + 'ml Wasser'
+        document.getElementById('mehl').innerHTML = (300 * 20) + 'g Mehl'
+        document.getElementById('hackfleisch').innerHTML = (200 * 20) + 'g Hackfleisch'
+        document.getElementById('zwiebel').innerHTML = (1 * 20) + 'Zwiebel'
+    }
+    else {
+        document.getElementById('eier').innerHTML = (1 * numberofpersons.value) + 'Ei(er)'
+        document.getElementById('wasser').innerHTML = (100 * numberofpersons.value) + 'ml Wasser'
+        document.getElementById('mehl').innerHTML = (300 * numberofpersons.value) + 'g Mehl'
+        document.getElementById('hackfleisch').innerHTML = (200 * numberofpersons.value) + 'g Hackfleisch'
+        document.getElementById('zwiebel').innerHTML = (1 * numberofpersons.value) + 'Zwiebel'
+    }
 }
-
 
 
 
