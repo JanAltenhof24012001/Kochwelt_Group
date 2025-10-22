@@ -176,6 +176,11 @@ header {
     height: 45px;
 }
 
+.btn-Portion:hover {
+    background-color: rgb(0, 161, 0);
+    cursor: pointer;
+}
+
 .ul {
     padding-inline-start: 0;
 }
@@ -424,7 +429,7 @@ footer {
         gap: 15px;
     }
 
-    .footer {
+    footer {
         height: 64px;
         padding-left: 16px;
         padding-right: 16px;
