@@ -47,12 +47,13 @@ body {
     max-width: 1980px;
 }
 
+
 .test-3 {
     max-width: 1980px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-end;
     width: 1980px;
-    align-items: center;
 }
 
 .nav-container {
