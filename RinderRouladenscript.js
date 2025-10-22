@@ -39,7 +39,7 @@ function ammount() {
 
     else {
         document.getElementById('Rinderrouladen').innerHTML = (1 * numberofpersons.value) + ' Rinder Rouladen'
-        document.getElementById('zwiebel').innerHTML = (0.63* numberofpersons.value) + ' Zwiebel(n)'    
+        document.getElementById('zwiebel').innerHTML = ((0.63* numberofpersons.value).toFixed(2))    
         document.getElementById('Gewürzgurke').innerHTML = (0.5 * numberofpersons.value) + ' Gwürzgurke(n)'
         document.getElementById('Scheiben Frühstücksspeck').innerHTML = (1 * numberofpersons.value) + ' Scheiben Frühstücksspeck'
         document.getElementById('Butterschmalz').innerHTML = (1.5 * numberofpersons.value) + ' Butterschmalz'
