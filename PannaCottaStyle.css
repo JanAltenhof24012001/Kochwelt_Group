@@ -9,11 +9,18 @@ body {
     font-family: Raleway, sans-serif;
 }
 
+.test {
+    max-width: 1980px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
 header {
     padding-left: 160px;
     padding-right: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
@@ -47,11 +54,17 @@ a:hover {
 
 .hidden-header-links {
     display: none;
+    }
+
+.test-2 {
+    max-width: 1980px;
 }
 
 main {
     padding-left: 160px;
     padding-right: 160px;
+    display: flex;
+    justify-content: center;
 }
 
 .panna-cotta {
@@ -149,6 +162,14 @@ footer {
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.test-3 {
+    max-width: 1980px;
+    display: flex;
+    justify-content: flex-start;
+    width: 1980px;
 }
 
 @media(max-width:1280px) {
@@ -159,6 +180,10 @@ footer {
     header {
         padding-left: 24px;
         padding-right: 24px;
+        align-items: center;
+    }
+
+    .test {
         align-items: center;
     }
 
@@ -192,7 +217,7 @@ footer {
 
     .hide {
         display: none;
-    }
+        }
 
     .requirements-pic {
         height: 15px;
