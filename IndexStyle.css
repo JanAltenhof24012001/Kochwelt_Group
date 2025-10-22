@@ -125,15 +125,6 @@ button:hover {
     
 }
 
-
-
-
-
-
-
-
-
-
 h2 {
     display: flex;
     justify-content: center;
@@ -158,6 +149,16 @@ h2 {
     width: 250px;
     height: 250px;
     margin: 0px 60px;
+}
+.data_protection {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.data_protection:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 0px white;
+    font-style: oblique;
 }
 
 @media (max-width: 1020px) {

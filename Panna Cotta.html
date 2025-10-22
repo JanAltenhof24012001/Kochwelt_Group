@@ -14,16 +14,16 @@
 <body>
     <header>
         <div class="test">
-        <a href="index.html"><img class="footer-header-logo" src="./img/logo.png" alt="logo"></a>
+            <a href="index.html"><img class="footer-header-logo" src="./img/logo.png" alt="logo"></a>
 
-        <nav class="header-links">
-            <a href="index.html">Start</a>
-            <a href="Manti.html">Rezept des Tages</a>
-            <a href="Contact.html">Kontakt</a>
-            <a href="Impressum.html">Impressum</a>
-        </nav>
+            <nav class="header-links">
+                <a href="index.html">Start</a>
+                <a href="Manti.html">Rezept des Tages</a>
+                <a href="Contact.html">Kontakt</a>
+                <a href="Impressum.html">Impressum</a>
+            </nav>
 
-        <img class="burger-menu" onclick="hidden_menu()" src="./img/burger menu.png" alt="menu">
+            <img class="burger-menu" onclick="hidden_menu()" src="./img/burger menu.png" alt="menu">
         </div>
     </header>
     <nav class="hidden-header-links hide" id="hide-menu">
@@ -34,64 +34,69 @@
     </nav>
     <main>
         <div class="test-2">
-        <h1>Panna Cotta</h1>
+            <h1>Panna Cotta</h1>
 
-        <div class="panna-cotta"></div>
+            <div class="panna-cotta"></div>
 
-        <div class="requirements-div">
-            <p class="requirements"><img class="requirements-pic" src="./img/icons/clock-regular.svg">15 min</p>
-            <p class="requirements"><img class="requirements-pic" src="./img/icons/brain-solid.svg">Simpel</p>
-            <p class="requirements"><img class="requirements-pic" src="./img/icons/calendar-alt-regular.svg">15.10.2025
+            <div class="requirements-div">
+                <p class="requirements"><img class="requirements-pic" src="./img/icons/clock-regular.svg">15 min</p>
+                <p class="requirements"><img class="requirements-pic" src="./img/icons/brain-solid.svg">Simpel</p>
+                <p class="requirements"><img class="requirements-pic"
+                        src="./img/icons/calendar-alt-regular.svg">15.10.2025
+                </p>
+            </div>
+
+            <div class="number-of-persons">
+                <p>Zutaten für</p>
+                <input id="number-of-persons" class="persons-input" type="number" max="20" min="1" value="4" required>
+                <button onclick="ammount()">Portionen</button>
+            </div>
+
+            <ul>
+                <li id="schlagsahne" class="li">400ml Schlagsahne</li>
+                <li id="milch">4El Milch</li>
+                <li id="schokolade" class="li">100g Weiße Schokolade</li>
+                <li id="vanille-zucker">20g Vanille Zucker</li>
+                <li id="gelatine" class="li">8 Blätter Gelatine</li>
+                <li id="himbeere">40g Himbeeren</li>
+                <li id="zucker" class="li">20g Zucker</li>
+            </ul>
+
+            <h2>Zubereitung</h2>
+
+            <div class="requirements-div">
+                <p class="requirements"><img class="requirements-pic" src="./img/icons/clock-regular.svg">Zubereitung 15
+                    min
+                </p>
+                <p class="requirements"><img class="requirements-pic" src="./img/icons/clock-regular.svg">Gesamtzeit ca.
+                    2
+                    Std</p>
+            </div>
+
+            <p>Schlagsahne und milch in einem Topf auf mittlerer Hitze erhitzen bei regelmäßigem rühren.
+                Weiße Schokolade in kleine Stücke brechen und mit Vanille Zucker dazugeben.
+                Wenn sich alles vermischt hat die Gelatine dazugeben und ebenfalls vermischen.
+                Nun in kleine Becher/Schüsseln verteilen und für 2 Stunden im Kühlschrank abkühlen lassen.
+                Himbeeren mit dem Zucker auf mittlerer Hitze ankochen lassen bis sich Flüssigkeit bildet und abkühlen
+                lassen.
+                Wenn abgekühlt, auf die abgekühlten Becher/Schüsseln verteilen und fertig.
+
             </p>
-        </div>
 
-        <div class="number-of-persons">
-            <p>Zutaten für</p>
-            <input id="number-of-persons" class="persons-input" type="number" max="20" min="1" value="4" required>
-            <button onclick="ammount()">Portionen</button>
-        </div>
+            <h3>Rezept erstellt von</h3>
 
-        <ul>
-            <li id="schlagsahne" class="li">400ml Schlagsahne</li>
-            <li id="milch">4El Milch</li>
-            <li id="schokolade" class="li">100g Weiße Schokolade</li>
-            <li id="vanille-zucker">20g Vanille Zucker</li>
-            <li id="gelatine" class="li">8 Blätter Gelatine</li>
-            <li id="himbeere">40g Himbeeren</li>
-            <li id="zucker" class="li">20g Zucker</li>
-        </ul>
-
-        <h2>Zubereitung</h2>
-
-        <div class="requirements-div">
-            <p class="requirements"><img class="requirements-pic" src="./img/icons/clock-regular.svg">Zubereitung 15 min
-            </p>
-            <p class="requirements"><img class="requirements-pic" src="./img/icons/clock-regular.svg">Gesamtzeit ca. 2
-                Std</p>
-        </div>
-
-        <p>Schlagsahne und milch in einem Topf auf mittlerer Hitze erhitzen bei regelmäßigem rühren.
-            Weiße Schokolade in kleine Stücke brechen und mit Vanille Zucker dazugeben.
-            Wenn sich alles vermischt hat die Gelatine dazugeben und ebenfalls vermischen.
-            Nun in kleine Becher/Schüsseln verteilen und für 2 Stunden im Kühlschrank abkühlen lassen.
-            Himbeeren mit dem Zucker auf mittlerer Hitze ankochen lassen bis sich Flüssigkeit bildet und abkühlen
-            lassen.
-            Wenn abgekühlt, auf die abgekühlten Becher/Schüsseln verteilen und fertig.
-
-        </p>
-
-        <h3>Rezept erstellt von</h3>
-
-        <div class="credits">
-            <img class="profile-picture" src="./img/profile.png" alt="Profilbild">
-            <p>Jan Altenhof</p>
-        </div>
+            <div class="credits">
+                <img class="profile-picture" src="./img/profile.png" alt="Profilbild">
+                <p>Jan Altenhof</p>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="test-3">
-        <a href="index.html"><img class="footer-header-logo" src="./img/logo.png" alt="logo"></a>
+            <a href="index.html"><img class="footer-header-logo" src="./img/logo.png" alt="logo"></a>
+            <a class="data_protection" href="Datenschutz.html">Datenschutz</a>
+
         </div>
     </footer>
 </body>
