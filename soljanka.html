@@ -141,4 +141,145 @@
 </body>
 <script src="PannaCottaScript.js" defer></script>
 
+</html><!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt - Soljanka</title>
+
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
+    <link rel="stylesheet" href="./SoljankaStylee.css">
+
+</head>
+
+<body onload="init_multiplied()">
+    <header>
+        <div class="test">
+            <a href="index.html"><img class="Kochwelt_logo" src="img/logo.png" alt="Kochwelt Logo"></a>
+            <nav class="navigation">
+                <a class="nav_button" href="index.html">Start</a>
+                <a class="nav_button" href="Manti.html">Rezept des Tages</a>
+                <a class="nav_button" href="Contact.html">Kontakt</a>
+                <a class="nav_button" href="Impressum.html">Impressum</a>
+            </nav>
+            <img class="burger-menu" onclick="hidden_menu()" src="./img/burger menu.png" alt="menu">
+        </div>
+    </header>
+    <nav class="hidden_navigation hide" id="hide-menu">
+        <a class="nav_button" href="index.html">Start</a>
+        <a class="nav_button" href="Manti.html">Rezept des Tages</a>
+        <a class="nav_button" href="Contact.html">Kontakt</a>
+        <a class="nav_button" href="Impressum.html">Impressum</a>
+    </nav>
+    <main>
+        <div class="test-2">
+            <section class="section1">
+                <h2> Soljanka</h2>
+                <div class="food_print"></div>
+                <div class="Expense">
+                    <div class="impingement">
+                        <img class="scale_graphic" src="img/icons/clock-regular.svg" alt="clock">
+                        <p class="work_time">35 Min.</p>
+                    </div>
+                    <div class="impingement">
+                        <img class="scale_graphic" src="img/icons/brain-solid.svg" alt="brain">
+                        <p class="difficulty">Mittel</p>
+                    </div>
+                    <div class="impingement">
+                        <img class="scale_graphic" src="img/icons/calendar-alt-regular.svg" alt="calendar">
+                        <p class="creation_day">14.10.2025</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section2">
+                <div>
+                    <div class="potion_input_area">
+
+                        <p>Zutaten für</p>
+                        <input class="multiplaktor_potion" id="multiplied-persons" type="number" max="20" min="1" value="4"
+                            required>
+                        <button onclick="set_clearmultiplied()" class="multiplaktor_button">Portionen</button>
+                    </div>
+                    <ul class="list_of_ingredients">
+                        <div id="ingredientslist"></div>
+                        <!-- <li class="ingredients" id="Rindfleisch">500g Rindfleisch</li>
+                        <li class="ingredients2" id="Schweinefleisch">500g Schweinefleisch</li>
+                        <li class="ingredients" id="Tomatenmark">5 EL Tomatenmark</li>
+                        <li class="ingredients2" id="Zwiebel">3 große Zwiebel</li>
+                        <li class="ingredients" id="Letscho">2 Glas Letscho (ca. 720g)</li>
+                        <li class="ingredients2" id="Gewürzgurken">1 Glas Gewürzgurken (ca. 700g)</li>
+                        <li class="ingredients" id="passierte_Tomaten">700ml passierte Tomaten</li>
+                        <li class="ingredients2" id="Wasser">1L Wasser</li>
+                        <li class="ingredients" id="Paprikapulver">1 TL Paprikapulver (edelsüß)</li>
+                        <li class="ingredients2" id="Schmand">1 Becher Schmand oder Saure Sahne (optional)</li>
+                        <li class="ingredients" id="Zitrone">1 Zitrone (optional)</li> -->
+                        <li class="ingredients2">Salz und Pfeffer nach Geschmack</li>
+                        <li class="ingredients">Öl zum Anbraten</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="section3">
+                <h3>Zubereitung</h3>
+                <div class="Expense">
+                    <div class="impingement">
+                        <img class="scale_graphic" src="img/icons/clock-regular.svg" alt="clock">
+                        <p class="work_time">Zubereitung: ca 10 min </p>
+                    </div>
+                    <div class="impingement">
+                        <img class="scale_graphic" src="img/icons/clock-regular.svg" alt="clock">
+                        <p class="work_time">Gesamt: ca 35 min</p>
+                    </div>
+                </div>
+                <p>
+                    Zuerst das Fleisch vorbereiten, indem es in kleine, mundgerechte Stücke geschnitten wird. Die Zwiebel
+                    schälen und ebenfalls fein würfeln.
+
+                    In einem großen Kochtopf etwas Öl erhitzen, um den Boden zu bedecken. Die gewürfelten Zwiebeln darin
+                    anschwitzen, bis sie durchscheinend sind. Das zerkleinerte Fleisch hinzufügen und mitbraten.
+
+                    Nun das Tomatenmark einrühren und vermischen. Anschließend das Letscho und die passierten Tomaten
+                    dazugeben.
+                    Mit Wasser auffüllen und die Suppe zum Kochen bringen.
+
+                    Die Gewürzgurken in kleine Würfel schneiden und zusammen mit dem Gurkenwasser in den Topf geben.
+
+                    Die Soljanka mit Paprikapulver würzen und mit Salz abschmecken. Die Suppe etwa 15 Minuten bei geringer
+                    Hitze
+                    köcheln lassen. Wurde rohes Fleisch verwendet, ist eine längere Kochzeit nötig als bei bereits
+                    gegrilltem
+                    Fleisch am besten probieren, bis das Fleisch weich ist.
+
+                    Zum Servieren die Soljanka mit einem Löffel Schmand oder Saurer Sahne und einer halben Zitrone
+                    anrichten.
+                    Dazu passt frisches Weißbrot oder Toastbrot.
+                </p>
+            </section>
+
+
+            <section class="section4">
+                <h4> Rezept erstellt von</h4>
+                <div class="created_by_area">
+                    <img src="img\profile.png" alt="Pic from author">
+                    <p> Rudolf Schultz</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="test-3">
+            <a href="index.html"><img src="img/logo.png" alt="Kochwelt Logo"></a>
+                <a class="data_protection" href="Datenschutz.html">Datenschutz</a>
+        </div>
+    </footer>
+</body>
+<script src="PannaCottaScript.js" defer></script>
+
 </html>
