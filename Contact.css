@@ -72,12 +72,12 @@ header {
     display: none;
 }
 
-a {
+.btn-links {
     text-decoration: none;
     color: black;
 }
 
-a:hover {
+.btn-links:hover {
     color: green;
     text-decoration: underline;
     text-underline-offset: 10px;

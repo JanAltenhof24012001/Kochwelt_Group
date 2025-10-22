@@ -67,7 +67,7 @@ body {
     padding-bottom: 10px;
 }
 
-a:hover {
+.btn:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
