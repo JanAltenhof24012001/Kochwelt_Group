@@ -17,11 +17,3 @@ function sendMail (event){
 function hidden_menu() {
     document.getElementById('hide-menu').classList.toggle('hide');
 }
-
-
-
-
-
-function listit() {
-    
-}
