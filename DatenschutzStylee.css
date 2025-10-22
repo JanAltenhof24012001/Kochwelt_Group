@@ -13,6 +13,9 @@ html {
 
 body {
     margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -37,19 +40,39 @@ h3 {
 
 main {
     display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 20px 160px;
+    justify-content: center;
+    flex: 1;
 }
 
 header {
     padding: 0px 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.test {
+    max-width: 1980px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.test-2 {
+    max-width: 1980px;
+    flex: 1;
+}
+
+.test-3 {
+    max-width: 1980px;
+    display: flex;
+    justify-content: flex-start;
+    width: 1980px;
 }
 
 .header-links {
@@ -87,6 +110,7 @@ footer {
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 @media(max-width:1280px) {
@@ -115,6 +139,10 @@ footer {
     footer {
         padding-left: 24px;
         padding-right: 24px;
+    }
+
+    .test {
+        align-items: center;
     }
 
     .hidden-header-links {
