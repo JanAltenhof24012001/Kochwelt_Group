@@ -8,7 +8,7 @@ function sendMail (event){
             'Accept':'application/json'
         }
     }).then(() => {
-        window.location.href = "./Contact.html";
+        alert("Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.");
     }).catch((error) => {
         console.log(error);
     });
@@ -16,4 +16,12 @@ function sendMail (event){
 
 function hidden_menu() {
     document.getElementById('hide-menu').classList.toggle('hide');
+}
+
+
+
+
+
+function listit() {
+    
 }

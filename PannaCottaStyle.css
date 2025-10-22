@@ -10,7 +10,7 @@ body {
 }
 
 .test {
-    max-width: 1980px;
+    max-width: 1920px;
     display: flex;
     justify-content: space-between;
     flex: 1;
@@ -59,7 +59,7 @@ header {
     }
 
 .test-2 {
-    max-width: 1980px;
+    max-width: 1920px;
 }
 
 main {
@@ -172,11 +172,11 @@ footer {
 }
 
 .test-3 {
-    max-width: 1980px;
+    max-width: 1920px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1980px;
+    width: 1920px;
 }
 .data_protection {
     color: white;
