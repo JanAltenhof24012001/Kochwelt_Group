@@ -105,6 +105,9 @@ main {
 .number-of-persons {
     display: flex;
     align-items: center;
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 .persons-input {
