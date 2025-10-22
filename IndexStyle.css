@@ -164,6 +164,10 @@ h2 {
     font-style: oblique;
 }
 
+.quick-fix {
+    height: 100%;
+}
+
 @media (max-width: 1020px) {
 
     .content {
