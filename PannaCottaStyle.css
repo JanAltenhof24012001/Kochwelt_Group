@@ -98,6 +98,9 @@ main {
 .number-of-persons {
     display: flex;
     align-items: center;
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 .persons-input {
@@ -169,7 +172,8 @@ footer {
 .test-3 {
     max-width: 1980px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-end;
     width: 1980px;
 }
 .data_protection {
