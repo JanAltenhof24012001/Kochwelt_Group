@@ -10,7 +10,7 @@ function ammount() {
     if (numberofpersons.value < 1) {
         document.getElementById('number-of-persons').value = '1'
         document.getElementById('Rinderrouladen').innerHTML =  (1 * 1) + 'Rinder Rouladen'
-        document.getElementById('zwiebel').innerHTML = (Math.round (0.63 * 1 * 100) / 100) + 'Zwiebel(n)'
+        document.getElementById('zwiebel').innerHTML = (Math.round(0.63 * 1 , 2)) + 'Zwiebel(n)'
         document.getElementById('Gwürzgurke').innerHTML = (0.5 * 1) + 'Gewürzgurke(n)'
         document.getElementById('Scheiben Frühstücksspeck').innerHTML = (1.5 * 1) + 'Scheiben Frühstücksspeck'
         document.getElementById('Butterschmalz').innerHTML = (0.25 * 1) + 'Butterschmalz'
