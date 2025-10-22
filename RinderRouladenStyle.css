@@ -264,6 +264,10 @@ footer {
     font-style: oblique;
 }
 
+.logo-media {
+    height: 100%;
+}
+
 @media(max-width: 1280px) {
 
     body {

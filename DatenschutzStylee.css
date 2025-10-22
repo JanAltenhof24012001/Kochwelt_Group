@@ -62,6 +62,10 @@ header {
     height: 112px;
 }
 
+.footer-header-logo {
+    height: 100%;
+}
+
 .test {
     max-width: 1980px;
     display: flex;
