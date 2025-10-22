@@ -34,6 +34,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 0px 160px;
+    height: 112px;
 }
 
 .test {
@@ -211,20 +212,17 @@ button:hover {
 }
 
 .created_by_area img {
-    width: 60px;
+    width: 100px;
     height: auto;
+    border-radius: 100%;
 }
 
 footer {
     background-color: rgba(64, 59, 59, 0.76);
-    padding: 30px 160px;
+    padding: 0px 160px;
     display: flex;
     justify-content: center;
-}
-
-footer img {
-    width: auto;
-    height: 72px;
+    height: 112px;
 }
 
 @media(max-width:1280px) {
@@ -306,6 +304,10 @@ footer img {
         font-size: 16px;
     }
 
+    header {
+        height: 64px;
+    }
+
     h1 {
         font-size: 44px;
     }
@@ -347,6 +349,14 @@ footer img {
         width: 75px;
         height: 24px;
         margin-left: 10px;
+    }
+
+    .created_by_area img {
+        width: 75px;
+    }
+
+    footer {
+        height: 64px;
     }
 
 }
