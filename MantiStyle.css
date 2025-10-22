@@ -112,6 +112,7 @@ main {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 40px;
+    width: 150px;
 }
 
 button {
@@ -156,7 +157,7 @@ li {
 
 .profile-picture {
     border-radius: 100%;
-    width: 10%;
+    width: 100px;
     
 }
 
@@ -293,5 +294,11 @@ footer {
         height: 24px;
         margin-left: 10px;
     }
+
+    .profile-picture {
+        border-radius: 100%;
+        width: 75px;
+    
+}
 
 }
