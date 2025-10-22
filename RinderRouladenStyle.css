@@ -61,14 +61,17 @@ body {
     margin-top: 50px;
     font-weight: bold;
     font-size: 24px;
+    padding-bottom: 10px;
+}
 
     a:hover {
         text-decoration: underline;
         text-underline-offset: 10px;
         text-decoration-thickness: 5px;
         color: #008000;
-    }
+        cursor: pointer;
 }
+
 
 .btn {
     text-decoration: none;
@@ -77,15 +80,9 @@ body {
     margin-top: 50px;
     font-weight: bold;
     font-size: 24px;
-
-    a:hover {
-        text-decoration: underline;
-        text-underline-offset: 10px;
-        text-decoration-thickness: 5px;
-        color: #008000;
-        cursor: pointer;
-    }
 }
+    
+
 
 .hitten-links {
     display: none;
@@ -100,6 +97,8 @@ header {
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 160px;
+    padding-right: 160px;
 }
 
 .header-img {
@@ -136,7 +135,7 @@ header {
 }
 
 #Ingredients-calculator {
-    margin: 30px;
+    margin: 30px 0;
     padding-top: 10px;
     display: flex;
     align-items: center;
@@ -153,21 +152,29 @@ header {
 
 .number-of-persons {
     display: flex;
+    align-items: center;
 }
 
 .input {
-    padding-top: 7px;
-    padding-bottom: 4px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 40px;
+    width: 150px;
     margin-left: 20px;
-    width: 112px;
 }
 
 .btn-Portion {
     background-color: #008000;
     color: white;
-    font-size: 15px;
     gap: 0px;
     padding: 5px 20px 5px 20px;
+    width: 150px;
+    height: 45px;
+}
+
+.ul {
+    padding-inline-start: 0;
 }
 
 li {
@@ -232,6 +239,8 @@ footer {
     margin: 0;
     display: flex;
     justify-content: center;
+    padding-left: 160px;
+    padding-right: 160px;
 }
 
 @media(max-width: 1280px) {
@@ -250,14 +259,11 @@ footer {
 
     header {
         align-items: center;
-    }
-
-    header {
         padding-left: 16px;
         padding-right: 16px;
     }
 
-    .nav-container {
+   .nav-container {
         display: none;
     }
 
@@ -281,13 +287,6 @@ footer {
         flex-direction: column;
         gap: 10px;
         align-items: end;
-
-        a:hover {
-            text-decoration: underline;
-            text-underline-offset: 10px;
-            text-decoration-thickness: 5px;
-            color: #008000;
-        }
     }
 
     .hide {
@@ -304,6 +303,24 @@ footer {
 
     .difficulty-box {
         height: 15px;
+    }
+
+    .btn-Portion {
+        width: 100px;
+    }
+
+    .input {
+        width: 100px;
+    }
+
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .mainContainer {
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
@@ -353,17 +370,17 @@ footer {
 
     #number-of-persons {
         width: 75px;
-        height: 16px;
-        margin-left: 12px;
+        height: 24px;
+        margin-left: 10px;
     }
 
     .btn-Portion{
         padding: 5px 9px 5px 9px;
+        width: 75px;
+        height: 30px;
     }
 
-    .ul {
-        padding: 16px;
-    }
+    
 
     .preparation {
         font-size: 16px;
@@ -395,7 +412,10 @@ footer {
     }
 
     .footer-header-logo {
-        height: 64px;
+        width: 200px;
+    }
+
+    .mainContainer {
         padding-left: 16px;
         padding-right: 16px;
     }
