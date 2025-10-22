@@ -58,6 +58,7 @@ header {
     display: flex;
     justify-content: flex-start;
     width: 1980px;
+    align-items: center;
 }
 
 .header-links {
