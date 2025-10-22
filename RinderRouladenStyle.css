@@ -358,6 +358,10 @@ footer {
         font-size: 16px;
     }
 
+    .logo-media{
+        width: 200px;
+    }
+
     header {
         height: 64px;
     }
