@@ -97,13 +97,6 @@ a {
     
 }
 
-a:hover {
-    color: green;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px;
-}
-
 .burger-menu {
     display: none;
 }
