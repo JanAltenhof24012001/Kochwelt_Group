@@ -67,11 +67,6 @@ header {
     font-weight: bold;
     padding-bottom: 10px;
 }
-.success-message {
-    font-size: 32px;
-    font-weight: bold;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-}
 
 .burger-menu {
     display: none;

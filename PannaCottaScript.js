@@ -120,7 +120,6 @@ function set_clearmultiplied() {
     let numberofpersons = document.getElementById('multiplied-persons');
     ingredientsList.innerHTML = '';
 
-    console.log(numberofpersons.value);
 
     if (numberofpersons.value < 1) {
         document.getElementById('multiplied-persons').value = '4'
@@ -166,7 +165,6 @@ function set_clearmultiplied() {
         ${predictioningredients[indexingredients].name}
         </li>`;
         }
-        console.log(indexingredients);
     }
 
 };
