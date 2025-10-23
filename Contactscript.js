@@ -8,7 +8,7 @@ function sendMail (event){
             'Accept':'application/json'
         }
     }).then(() => {
-        alert("Vielen Dank für Ihre Nachricht! Wir werden uns so schnell wie möglich bei Ihnen melden.");
+        window.location.href = "ContactSuccess.html";
     }).catch((error) => {
         console.log(error);
     });
