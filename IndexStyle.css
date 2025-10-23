@@ -65,7 +65,7 @@ header {
 main {
     margin: 0;
     display: flex;
-    padding: 60px 160px;
+    padding: 60px 0;
     justify-content: center;
     flex: 1;
 }
@@ -100,6 +100,7 @@ main {
 
 .section1 {
     display: flex;
+    padding: 0 160px ;
 }
 
 .manti-pic {
@@ -144,7 +145,7 @@ h2 {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    margin: 0px 80px;
+    padding: 0 160px;
 }
 
 .text {
@@ -345,9 +346,12 @@ footer {
         align-items: center;
     }
 
-    main {
-        padding-left: 24px;
-        padding-right: 24px;
+    .section1 {
+        padding: 0 24px;
+    }
+
+    .content {
+        padding: 0 24px;
     }
 
     footer {
@@ -469,6 +473,14 @@ footer {
 
     body {
         font-size: 16px
+    }
+
+    .section1 {
+        padding: 0 16px;
+    }
+
+    .content {
+        padding: 0 16px;
     }
 
     
